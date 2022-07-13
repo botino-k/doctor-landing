@@ -1,8 +1,9 @@
 
 
-const AppGradeDescription = ({description}:any) => {
+const AppGradeDescription = ({text}:any) => {
+  console.log(text)
   return( 
-  <div>{description}</div>)
+  <span className="description-block__text" >{text} </span>)
 };
 
 export default AppGradeDescription;
