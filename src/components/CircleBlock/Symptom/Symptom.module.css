@@ -1,11 +1,27 @@
-.block{
 
+
+.block{
+position: relative;
+width: 300px;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.symptomBlock{
+  left:0;
+  position: absolute;
+  transform-origin: 1200px;
 }
 
 .icon{
-
+  
 }
 
 .description{
-  
+
+}
+.imgBlock{
+  position: absolute;
 }

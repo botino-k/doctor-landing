@@ -3,8 +3,8 @@ import './index.css';
 import IMAGES from "./img";
 
 import AppGradeCard from "./components/Сard/Сard";
-
 import Symptom from "./components/CircleBlock/Symptom/Symptom";
+
 
 const App = () => {
 
@@ -13,6 +13,7 @@ const App = () => {
       id: 1,
       title: "Взрослый",
       img: IMAGES.adult,
+      imgCircle: IMAGES.maskGrp,
       description: [
         `Менее тяжелые формы СМА могут возникать и диагностироваться в зрелом возрасте.`,
         `По сравнению с СМА у детей, СМА у взрослых может иметь более легкие симптомы, но без патогенетической терапии пациенты со СМА 2-3 типа неуклонно теряют двигательные навыки.`,
@@ -50,7 +51,7 @@ const App = () => {
       <h1 className="main-header">А вдруг СМА?</h1>
       <h2 className="choice-header">Выберите, кто Ваш пациент:</h2>
       <AppGradeCard card = {data}/>
-      <Symptom props= {data[0].symptoms}/> 
+      <Symptom props= {data}/> 
     </div>
   );
 };

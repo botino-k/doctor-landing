@@ -10,6 +10,7 @@ circle7: require('./img/Circle/circle7.png'),
 circle8: require('./img/Circle/circle8.png'),
 circle9: require('./img/Circle/circle9.png'),
 circle10: require('./img/Circle/circle10.png'),
+maskGrp: require('./img/Circle/maskGrp.png'),
 }
 
 export default IMAGES ;
