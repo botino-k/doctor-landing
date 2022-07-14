@@ -76,13 +76,13 @@ button {
   box-shadow: 0px 4px 4px rgba(6, 140, 166, 0.31);
   border-radius: 10px;
 }
-
+/*
 .description-block__text {
   display: block;
   font-weight: 400;
   font-size: 2.1rem;
   line-height: 129%;
-}
+}*/
 
 .flax-layout{
   display:flex;
@@ -93,7 +93,6 @@ button {
   font-weight: 700;
 font-size: 3.0rem;
 line-height: 167%;
-
 color: #028CA6;
 }
 
