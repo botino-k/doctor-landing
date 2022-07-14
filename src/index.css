@@ -101,4 +101,5 @@ color: #028CA6;
   flex-direction: column;
   min-height: 420px;
   justify-content: space-between;
+  align-items: center;
 }
