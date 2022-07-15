@@ -5,7 +5,7 @@ interface Props {
   description: string[];
 }
 
-const AppGradeDescriptionBlock = ({ description }: Props) => {
+const CardDescriptionBlock = ({ description }: Props) => {
   const descriptionBlock = description.map((item, index) => {
 
     return (
@@ -17,4 +17,4 @@ const AppGradeDescriptionBlock = ({ description }: Props) => {
 
   return <div className="card">{descriptionBlock}</div>;
 };
-export default AppGradeDescriptionBlock;
+export default CardDescriptionBlock;

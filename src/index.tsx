@@ -2,9 +2,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import IMAGES from "./img";
 
-import AppGradeCard from "./components/Сard/Сard";
+import Card from "./components/Card/Card";
 import Symptom from "./components/CircleBlock/Symptom/Symptom";
-
+import Question from "./components/Question/Question";
 
 const App = () => {
 
@@ -50,7 +50,8 @@ const App = () => {
     <div className='wrapper'>
       <h1 className="main-header">А вдруг СМА?</h1>
       <h2 className="choice-header">Выберите, кто Ваш пациент:</h2>
-      <AppGradeCard card = {data}/>
+      <Card card = {data}/>
+      <Question/>
       <Symptom props= {data}/> 
     </div>
   );
