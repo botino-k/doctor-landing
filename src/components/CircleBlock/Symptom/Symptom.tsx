@@ -1,11 +1,17 @@
 import stl from "./Symptom.module.css";
+import SymptomCard from '../SymptomCard/SymptomCard';
+
+//import { useState } from "react";
 
 //interface Props {
 //  props: string
 //}
 
 const Symptom = ({ props }: any) => {
+
+
   const symptomBlock = props[0].symptoms.map((item: any, index: number) => {
+  
     const circStyle = {
       transform: `rotate(calc(360deg/${props[0].symptoms.length}*${index}))`};
     const rotate = {
@@ -31,17 +37,8 @@ const Symptom = ({ props }: any) => {
     }
 
     return (
-      <div style={circStyle} className={stl.symptomBlock}>
-        <div style={rotate} className={stl.symptom}>
-          <div className={stl.icon}>
-            <img src={item.img} alt="img" />
-          </div>
-          <div style={descrStyle} className={stl.description}>
-            {item.description}
-          </div>
-        </div>
-      </div>
-    );
+      <SymptomCard data={item} styles={[circStyle, rotate, descrStyle]} />
+         );
   });
 
   return (
