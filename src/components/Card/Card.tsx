@@ -1,23 +1,30 @@
 import stl from './Card.module.css'
 import CardDescriptionBlock from "../CardDescriptionBlock/CardDescriptionBlock";
 
-/*interface Props {
-
-  }*/
+interface Props {
+  card: {
+    title: string;
+    img: string;
+    description: string[];
+  };
+}
   
 
-const Card = ({  card }:any) => {
+const Card = ({card}:Props) => {
 
-  const descriptionBlock =  card.map((item:any) => {
+    return (
+      <section className={stl.card}>
+        <div className={stl.imgBlock}>
+          <h3 >{card.title} </h3>
+          <div className={stl.img}>
+            <img src={card.img} alt={card.title} />
+          </div>
+        </div>
+        <CardDescriptionBlock description={card.description} />
+      </section>
+    );
 
-    return (<section className = 'card'>
-    <h3 className = 'card-header'>{item.title} </h3>
-    <div className={stl.img}><img src={item.img} alt={item.title} /></div>
-    <CardDescriptionBlock  description={item.description} />
-  </section>)
-  });
 
-  return <div className="flax-layout">{descriptionBlock}</div>;
 };
 
 export default Card;

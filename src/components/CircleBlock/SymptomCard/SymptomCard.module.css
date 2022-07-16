@@ -3,11 +3,11 @@
   left: 0;
   position: absolute;
   transform-origin: 300px ;
- 
 }
 
 .symptom{
   position: relative;
+  cursor: pointer;
 }
 
 .description {

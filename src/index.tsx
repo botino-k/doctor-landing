@@ -2,9 +2,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import IMAGES from "./img";
 
-import Card from "./components/Card/Card";
+import MainHeader from "./components/MainHeader/MainHeader";
+import ChoiceHeader from "./components/ChoiceHeader/ChoiceHeader";
+import CardBlock from './components/CardBlock/CardBlock';
 import Symptom from "./components/CircleBlock/Symptom/Symptom";
 import Question from "./components/Question/Question";
+
 
 const App = () => {
 
@@ -46,13 +49,21 @@ const App = () => {
     },
   ];
 
+const navData = {
+  mainHeader:   "А вдруг СМА?",
+  choiceHeader: "Выберите, кто Ваш пациент:",
+  infoQuestion: "Сообщает ли один из ваших пациентов о следующих симптомах? (нажмите на любую иконку и узнайте больше)"
+};
+
   return (
-    <div className='wrapper'>
-      <h1 className="main-header">А вдруг СМА?</h1>
-      <h2 className="choice-header">Выберите, кто Ваш пациент:</h2>
-      <Card card = {data}/>
-      <Question/>
-      <Symptom props= {data}/> 
+    <div className="wrapper">
+      <div className="wrapperContent">
+        <MainHeader text={navData.mainHeader} />
+        <ChoiceHeader text={navData.choiceHeader} />
+        <CardBlock cards={data} />
+        <Question />
+        <Symptom props={data} />
+      </div>
     </div>
   );
 };
