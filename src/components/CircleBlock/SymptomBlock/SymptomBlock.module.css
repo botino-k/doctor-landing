@@ -40,7 +40,6 @@
   left: 0;
   position: absolute;
   transform-origin: 300px ;
- 
 }
 
 .symptom{
@@ -56,4 +55,13 @@
   transform: translate(0, -50%);
   width: max-content;
   max-width: 242px;
+}
+
+@media(max-width: 1100px){
+  .block{
+transform: scale(0.9);
+  }
+  .mainBlock {
+   min-height: 700px;
+  }
 }

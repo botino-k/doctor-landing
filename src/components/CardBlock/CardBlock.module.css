@@ -4,3 +4,11 @@
   column-gap: 10px;
   padding-bottom: 100px;
 }
+
+@media(max-width: 1023.9px){
+  .layout{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}

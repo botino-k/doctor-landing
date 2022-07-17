@@ -1,14 +1,21 @@
 .block {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   color: #2A477D;
   padding-bottom: 35px;
 }
 
 .tip {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   color: #068CA6;
+}
+
+@media(max-width: 1023.9px) {
+  .block {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }

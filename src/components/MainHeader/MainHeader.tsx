@@ -1,11 +1,11 @@
-import stl from './MainHeader.module.css'
+import stl from "./MainHeader.module.css";
 
-interface Props {
+interface CardDescriptionType  {
   text: string;
-}
+};
 
-const CardDescription = ({ text }: Props) => {
-    return <h1 className={stl.header}>{text}</h1>
+const CardDescription = ({ text }: CardDescriptionType) => {
+  return <h1 className={stl.header}>{text}</h1>;
 };
 
 export default CardDescription;

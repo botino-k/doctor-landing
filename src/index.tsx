@@ -5,7 +5,7 @@ import IMAGES from "./img";
 import MainHeader from "./components/MainHeader/MainHeader";
 import ChoiceHeader from "./components/ChoiceHeader/ChoiceHeader";
 import CardBlock from './components/CardBlock/CardBlock';
-import Symptom from "./components/CircleBlock/Symptom/Symptom";
+import SymptomBlock from "./components/CircleBlock/SymptomBlock/SymptomBlock";
 import Question from "./components/Question/Question";
 
 
@@ -62,7 +62,7 @@ const navData = {
         <ChoiceHeader text={navData.choiceHeader} />
         <CardBlock cards={data} />
         <Question />
-        <Symptom props={data} />
+        <SymptomBlock props={data[0]} />
       </div>
     </div>
   );
@@ -71,6 +71,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(  <App/>);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
